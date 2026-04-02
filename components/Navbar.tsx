@@ -24,7 +24,7 @@ export default function Navbar() {
       <nav className="w-full max-w-4xl bg-white/30 backdrop-blur-2xl border border-white/60 sm:rounded-full rounded-[2rem] px-2 py-2 flex items-center justify-between shadow-[0_8px_32px_0_rgba(143,86,225,0.1)] pointer-events-auto ring-1 ring-white/50 relative">
         {/* Logo Section */}
         <Link
-          href="#home"
+          href="#"
           className="flex items-center gap-3 ml-2 hover:opacity-70 transition-opacity"
         >
           <Image
@@ -64,7 +64,11 @@ export default function Navbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden flex items-center justify-center p-2.5 rounded-full hover:bg-white/50 text-slate-700 transition mr-1"
           >
-            {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
           </button>
         </div>
 

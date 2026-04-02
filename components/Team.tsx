@@ -30,14 +30,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     qrCodeUrl: "/qr-profile-ma.svg",
     phone: "+919486502203",
   },
-  {
-    id: "rahil",
-    firstName: "RAHIL",
-    lastName: "",
-    role: "Co-Founder",
-    qrCodeUrl: "/qr-profile-ma.svg",
-    phone: "+1234567890",
-  },
 ];
 
 function TeamCard({ member }: { member: TeamMember }) {
