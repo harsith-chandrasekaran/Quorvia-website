@@ -76,23 +76,23 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -10, scale: 0.95 }}
               transition={{ duration: 0.2 }}
-              className="absolute top-full mt-3 right-0 w-48 bg-white/95 backdrop-blur-3xl border border-black/5 rounded-2xl shadow-2xl flex flex-col p-4 gap-4 md:hidden origin-top-right overflow-hidden"
+              className="absolute top-full mt-3 right-0 w-64 md:w-72 bg-white/95 backdrop-blur-3xl border border-black/5 rounded-[1.5rem] shadow-2xl flex flex-col p-6 gap-5 md:hidden origin-top-right overflow-hidden"
             >
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-sm font-bold text-slate-600 hover:text-secondary transition-colors"
+                  className="text-base font-bold text-slate-600 hover:text-secondary transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="w-full h-[1px] bg-black/5 mt-1 mb-1"></div>
+              <div className="w-full h-px bg-black/5 mt-2 mb-2"></div>
               <Link
                 href="#contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="sm:hidden flex items-center justify-center bg-secondary hover:bg-secondary/90 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition-all active:scale-95 shadow-md w-full"
+                className="sm:hidden flex items-center justify-center bg-secondary hover:bg-secondary/90 text-white px-5 py-3.5 rounded-xl text-base font-bold transition-all active:scale-95 shadow-md w-full"
               >
                 Consultation
               </Link>
