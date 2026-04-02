@@ -13,7 +13,6 @@ export default function Companies() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
            {[1,2,3,4].map((i) => (
              <div key={i} className="aspect-video bg-white rounded-2xl flex items-center justify-center border border-black/5 hover:border-secondary transition-colors group cursor-pointer shadow-sm relative overflow-hidden">
-                <div className="mac-dots absolute top-4 left-4 scale-75 opacity-50"><div className="dot"></div></div>
                 <span className="font-mono text-slate-300 font-bold group-hover:text-secondary transition-colors">Client {i}</span>
              </div>
            ))}

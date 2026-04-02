@@ -21,27 +21,6 @@ body {
   background-size: 32px 32px;
 }
 
-.mac-dots {
-  display: flex;
-  gap: 8px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #00000008;
-  margin-bottom: 24px;
-}
-
-.mac-dots::before,
-.mac-dots::after,
-.mac-dots .dot {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.mac-dots::before { background-color: #ff5f56; }
-.mac-dots .dot { background-color: #ffbd2e; }
-.mac-dots::after { background-color: #27c93f; }
 
 @theme inline {
   --color-background: var(--background);

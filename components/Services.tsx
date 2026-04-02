@@ -79,9 +79,6 @@ export default function Services() {
                 ${item.theme === 'dark' ? 'bg-slate-900 border-slate-800' : 'bg-white/70 backdrop-blur-md border-black/5'}
               `}
             >
-              {item.terminal && (
-                 <div className="mac-dots"><div className="dot"></div></div>
-              )}
 
               <div className="flex flex-col h-full justify-between mt-2">
                 <div>

@@ -9,9 +9,6 @@ export default function About() {
           About Quorvia.
         </h2>
         <div className="p-8 md:p-12 bg-white/60 backdrop-blur-md rounded-3xl border border-black/5 shadow-xl relative overflow-hidden text-left">
-          <div className="mac-dots">
-            <div className="dot"></div>
-          </div>
           <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
             <p className="text-xl text-slate-800 font-bold mb-4">
               Quorvia is a modern digital solutions venture focused on helping

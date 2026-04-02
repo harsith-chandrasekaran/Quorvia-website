@@ -18,9 +18,6 @@ export default function Pricing() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
           {/* Starter Package */}
           <div className="p-8 bg-white/60 backdrop-blur-md rounded-3xl border border-black/5 hover:border-secondary/50 group hover:-translate-y-2 transition-all duration-300 relative text-left shadow-lg hover:shadow-2xl flex flex-col h-full">
-            <div className="mac-dots">
-              <div className="dot"></div>
-            </div>
             <h3 className="text-2xl font-bold text-slate-800 mb-2 group-hover:text-secondary transition-colors">
               Starter Package
             </h3>
@@ -59,9 +56,6 @@ export default function Pricing() {
 
           {/* Growth Package */}
           <div className="p-10 bg-slate-900 rounded-3xl border border-secondary relative text-left shadow-2xl shadow-secondary/20 md:-mt-4 md:mb-4 md:scale-[1.03] group hover:-translate-y-3 md:hover:scale-[1.05] hover:shadow-[0_0_50px_-10px_rgba(143,86,225,0.5)] transition-all duration-500 z-10 flex flex-col h-full">
-            <div className="mac-dots">
-              <div className="dot"></div>
-            </div>
             <div className="absolute top-0 right-0 bg-secondary text-white px-4 py-1.5 rounded-bl-xl rounded-tr-3xl text-sm font-bold shadow-md">
               RECOMMENDED
             </div>
@@ -104,9 +98,6 @@ export default function Pricing() {
 
           {/* Scale Package */}
           <div className="p-8 bg-white/60 backdrop-blur-md rounded-3xl border border-black/5 hover:border-secondary/50 group hover:-translate-y-2 transition-all duration-300 relative text-left shadow-lg hover:shadow-2xl flex flex-col h-full">
-            <div className="mac-dots">
-              <div className="dot"></div>
-            </div>
             <h3 className="text-2xl font-bold text-slate-800 mb-2 group-hover:text-secondary transition-colors">
               Scale Package
             </h3>
@@ -145,11 +136,11 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <p className=" mb-4 pt-20 font-mono text-[1rem] flex items-center justify-center gap-2">
+      <p className="mb-4 pt-16 md:pt-20 font-mono text-sm md:text-base text-center max-w-2xl mx-auto px-4 text-slate-500">
         &quot;
-        <span className="text-secondary/75 font-extrabold text-[1.2rem]">
+        <span className="text-secondary/80 font-bold text-base md:text-lg">
           Custom plans
-        </span>
+        </span>{" "}
         available based on your business needs. One-time setup fee
         applies.&quot;
       </p>
