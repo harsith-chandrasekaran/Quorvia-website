@@ -27,15 +27,14 @@ export default function Pricing() {
 
             <div className="text-4xl font-black text-secondary mb-6 group-hover:scale-[1.02] inline-block origin-left transition-transform">
               ₹4,999
-              <span className="text-2xl text-slate-400 font-normal"> /mo</span>
             </div>
 
             <ul className="space-y-4 mb-4 grow">
               {[
-                "Basic Branding (logo tweaks, colors, fonts)",
-                "Social Media Setup (Instagram, basic posts)",
-                "8–12 Creatives/month",
-                "Basic WhatsApp auto-reply setup",
+                "WhatsApp Funnel Setup",
+                "Basic Automation (Greeting + Quick Replies)",
+                "Lead Capture Setup",
+                "Social Media Integration",
               ].map((feature, i) => (
                 <li
                   key={i}
@@ -68,16 +67,14 @@ export default function Pricing() {
 
             <div className="text-4xl font-black text-white mb-8 group-hover:scale-[1.02] inline-block origin-left transition-transform">
               ₹14,999
-              <span className="text-2xl text-slate-500 font-normal"> /mo</span>
             </div>
 
             <ul className="space-y-4 mb-4 grow">
               {[
-                "Social Media Management",
-                "Paid Ads (Meta/Google)",
-                "Lead Generation Funnel",
-                "WhatsApp / Email follow-ups",
-                "Landing page (basic)",
+                "Complete WhatsApp System (Funnel + Automation + Order Flow)",
+                "Sales Funnel + Lead Conversion Setup",
+                "CRM Setup + Follow-up System",
+                "Analytics Setup",
               ].map((feature, i) => (
                 <li
                   key={i}
@@ -107,16 +104,16 @@ export default function Pricing() {
 
             <div className="text-4xl font-black text-secondary mb-6 group-hover:scale-[1.02] inline-block origin-left transition-transform">
               ₹29,999
-              <span className="text-2xl text-slate-400 font-normal"> /mo</span>
             </div>
 
             <ul className="space-y-4 mb-4 grow">
               {[
-                "Advanced Ads Strategy",
-                "Full Automation System (CRM + workflows)",
-                "Conversion optimization",
-                "Advanced creatives & branding",
-                "Analytics dashboard + reports",
+                "Everything in Growth",
+                "Advanced WhatsApp Automation",
+                "Complete CRM System",
+                "No-Cart Ordering System",
+                "Product/Menu Display Setup",
+                "Business System Integration + Strategy",
               ].map((feature, i) => (
                 <li
                   key={i}
