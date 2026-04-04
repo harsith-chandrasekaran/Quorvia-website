@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Copy, Terminal, ChevronRight } from "lucide-react";
+import { Terminal, ChevronRight } from "lucide-react";
 
 export default function Hero() {
   return (

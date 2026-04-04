@@ -1,7 +1,8 @@
 "use client";
 import { useState, MouseEvent } from "react";
+import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Phone, RotateCcw } from "lucide-react";
+import { Phone } from "lucide-react";
 
 interface TeamMember {
   id: string;
@@ -111,9 +112,11 @@ function TeamCard({ member }: { member: TeamMember }) {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-white/8 rounded-full blur-[40px] pointer-events-none" />
 
               <div className="flex justify-between items-start relative z-10">
-                <img
+                <Image
                   src="/logo-white.svg"
                   alt="Quorvia Logo"
+                  width={90}
+                  height={70}
                   className="h-[70px] w-[90px] object-contain -mt-2"
                 />
                 {/* Golden Chip */}
@@ -138,9 +141,11 @@ function TeamCard({ member }: { member: TeamMember }) {
                   </div>
                 </div>
                 <div className="shrink-0">
-                  <img
+                  <Image
                     src={member.qrCodeUrl}
                     alt="QR Code"
+                    width={110}
+                    height={110}
                     className="w-[100px] h-[100px] sm:w-[110px] sm:h-[110px] block object-contain"
                   />
                 </div>
@@ -149,7 +154,7 @@ function TeamCard({ member }: { member: TeamMember }) {
 
             {/* Back Face */}
             <div
-              className="absolute inset-0 w-full h-full bg-black/90 rounded-2xl sm:rounded-[1.25rem] p-6 flex flex-col items-center justify-center shadow-[0_0_40px] shadow-secondary/50 overflow-hidden border border-3 border-secondary/60"
+              className="absolute inset-0 w-full h-full bg-black/90 rounded-2xl sm:rounded-[1.25rem] p-6 flex flex-col items-center justify-center shadow-[0_0_40px] shadow-secondary/50 overflow-hidden border-[3px] border-secondary/60"
               style={{
                 backfaceVisibility: "hidden",
                 WebkitBackfaceVisibility: "hidden",
@@ -159,9 +164,11 @@ function TeamCard({ member }: { member: TeamMember }) {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-white/8 rounded-full blur-[40px] pointer-events-none" />
 
               <div className="shrink-0 z-10 mb-6">
-                <img
+                <Image
                   src={member.qrCodeUrl}
                   alt="QR Code"
+                  width={176}
+                  height={176}
                   className="w-36 h-36 sm:w-44 sm:h-44 block object-contain"
                 />
               </div>
