@@ -9,9 +9,6 @@
   --color-secondary: #8f56e1;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   background-color: var(--color-primary);

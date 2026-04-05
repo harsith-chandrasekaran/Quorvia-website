@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jura, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import NexoraFloat from "@/components/nexorafloat";
+import SmoothScrolling from "@/components/SmoothScrolling";
 import "./globals.css";
 
 const jura = Jura({
@@ -31,9 +32,11 @@ export default function RootLayout({
       className={`${jura.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
-        <NexoraFloat />
+        <SmoothScrolling>
+          <Navbar />
+          {children}
+          <NexoraFloat />
+        </SmoothScrolling>
       </body>
     </html>
   );

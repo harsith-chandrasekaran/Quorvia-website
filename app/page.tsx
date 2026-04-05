@@ -5,30 +5,44 @@ import Companies from "@/components/Companies";
 import Pricing from "@/components/Pricing";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-primary selection:bg-secondary selection:text-white">
       <div id="home">
+        {/* We don't wrap Hero with ScrollReveal to avoid delay on load */}
         <Hero />
       </div>
       <div id="about">
-        <About />
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
       </div>
       <div id="services">
-        <Services />
+        <ScrollReveal>
+          <Services />
+        </ScrollReveal>
       </div>
       <div id="companies">
-        <Companies />
+        <ScrollReveal>
+          <Companies />
+        </ScrollReveal>
       </div>
       <div id="pricing">
-        <Pricing />
+        <ScrollReveal>
+          <Pricing />
+        </ScrollReveal>
       </div>
       <div id="team">
-        <Team />
+        <ScrollReveal>
+          <Team />
+        </ScrollReveal>
       </div>
       <div id="contact">
-        <Contact />
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
       </div>
     </main>
   );
