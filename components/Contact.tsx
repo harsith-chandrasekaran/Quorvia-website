@@ -68,7 +68,7 @@ export default function Contact() {
         {/* Brand footer signature */}
         <div className="mt-16 text-center text-slate-400 font-mono text-sm">
           <p className="mb-2 hover:text-secondary transition-colors cursor-pointer inline-block">
-            {"< Quorvia Neo-Studio />"}
+            {"< Quorvia Labs />"}
           </p>
           <p>© {new Date().getFullYear()} Quorvia All rights reserved.</p>
         </div>
